@@ -1,5 +1,5 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
-pkgname=my-xfce-config
+pkgname=my-xfce-config-git
 _pkgname=my-xfce-config
 pkgver=22.07
 pkgrel=01

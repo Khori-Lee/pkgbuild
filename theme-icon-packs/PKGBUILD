@@ -1,11 +1,11 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
-pkgname=Theme-Icon-Packs-git
-_pkgname=Theme-Icon-Packs
+pkgname=theme-icon-packs-git
+_pkgname=theme-icon-packs
 pkgver=22.07
-pkgrel=02
-_destname1="$HOME/.icons"
-_destname2="$HOME/.themes/"
-pkgdesc="Beautyline icons completed for ArcoLinux + Surfn icons + Arc Themes"
+pkgrel=01
+_destname1="/usr/share/icons"
+_destname2="/usr/share/themes"
+pkgdesc="Icon themes for Archolinux Surfn + Miny Y + Breeze"
 arch=('any')
 url="https://github.com/Khori-Lee/${_pkgname}.git"
 license=('GPL3')
@@ -20,6 +20,6 @@ package() {
 	install -dm 755 ${pkgdir}${_destname2}
 	rm ${srcdir}/${_pkgname}/git*
 	rm ${srcdir}/${_pkgname}/setup*
-    cp -r ${srcdir}/${_pkgname}/.icons/* ${pkgdir}${_destname1}
-	cp -r ${srcdir}/${_pkgname}/.themes/* ${pkgdir}${_destname2}
+    cp -r ${srcdir}/${_pkgname}/${_destname1}/* ${pkgdir}${_destname1}
+    cp -r ${srcdir}/${_pkgname}/${_destname2}/* ${pkgdir}${_destname2}
 }
