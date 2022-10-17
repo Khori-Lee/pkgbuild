@@ -2,7 +2,7 @@
 pkgname=my-xfce-config-git
 _pkgname=my-xfce-config
 pkgver=22.07
-pkgrel=01
+pkgrel=02
 _destname1="/etc/skel/"
 #_destname2="/usr/share/themes/"
 pkgdesc="Personal config for xfce4"
