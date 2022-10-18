@@ -2,13 +2,14 @@
 pkgname=plymouththeme-cat-git
 _pkgname=plymouththeme-cat
 pkgver=22.07
-pkgrel=01
+pkgrel=03
 _destname1="/usr/share/plymouth/themes/"
-_destname2="/etc/plymouth/"
+# _destname2="/etc/"
 pkgdesc="Personal package for installing plymouththeme-cat theme"
 arch=('any')
 url="https://github.com/Khori-Lee/${_pkgname}.git"
 license=('GPL3')
+depends=('plymouth')
 makedepends=('git')
 provides=("${pkgname}")
 conflicts=()
@@ -20,6 +21,6 @@ package() {
 	install -dm 755 ${pkgdir}${_destname2}
 	rm ${srcdir}/${_pkgname}/git*
 	rm ${srcdir}/${_pkgname}/setup*
-    cp -r ${srcdir}/${_pkgname}/${_destname1}/* ${pkgdir}${_destname1}
-    cp -r ${srcdir}/${_pkgname}/${_destname2}/* ${pkgdir}${_destname2}
+    cp -rf ${srcdir}/${_pkgname}/${_destname1}/. ${pkgdir}${_destname1}
+    # cp -rf ${srcdir}/${_pkgname}/${_destname2}/. ${pkgdir}${_destname2}
 }
