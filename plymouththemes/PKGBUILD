@@ -1,11 +1,11 @@
 # Maintainer: Erik Dubois <erik.dubois@gmail.com>
-pkgname=plymouththeme-cat-git
-_pkgname=plymouththeme-cat
+pkgname=plymouththemes-git
+_pkgname=plymouththemes
 pkgver=22.07
 pkgrel=03
 _destname1="/usr/share/plymouth/themes/"
 # _destname2="/etc/"
-pkgdesc="Personal package for installing plymouththeme-cat theme"
+pkgdesc="Personal package for installing plymouth themes"
 arch=('any')
 url="https://github.com/Khori-Lee/${_pkgname}.git"
 license=('GPL3')
